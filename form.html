@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <title>Form</title>
+	 <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<button id="knopka" class="butt">
+      Войти
+    </button>
+    <form id="forma">
+    	<div class="fr" align="center">
+    		<input type="text" class="fil1" placeholder="Логин">
+    		<input type="password" class="fil1" placeholder="Пароль">
+    		<button type="submit" class="butt1">Войти</button>
+    	</div>
+    </form> 
+	<script>
+		$('form').hide();
+		$('button.butt').click(function(){
+			$('form').fadeIn("slow");
+			$('button.butt').fadeOut("fast");
+		})
+	</script>
+
+
+</body>
+</html>	 
